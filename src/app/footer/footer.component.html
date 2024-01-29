@@ -1,0 +1,83 @@
+<div class="footer">
+  <div class="container">
+    <!-- <div class="main_2"> -->
+    <div class="footer-end">
+      <div class="footer-logo">
+        <img src="..\assets\img\whatuni_logo.svg.svg" alt="logo" />
+      </div>
+      <div *ngFor="let grid of grids" class="footer-list-1">
+        <h4 class="footer-header quick-links">
+          {{ grid.headerText }}
+        </h4>
+        <ul class="list-1">
+          <li *ngFor="let item of grid.items">
+            <a href="#">{{ item }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div> -->
+      <!-- <div class="footer-list-1">
+          <ul class="list-1">
+            <h4 class="footer-header quick-links">{{ li.head }}</h4>
+            <li *ngFor="let li of footerList1">
+              <a href="#">{{ li }}</a>
+            </li>
+          </ul>
+          <ul class="list-1" *ngFor="let li of footerList2">
+            <li>
+              <a href="#">{{ li }}</a>
+            </li>
+          </ul>
+          <ul class="list-1" *ngFor="let li of footerList3">
+            <li>
+              <a href="#">{{ li }}</a>
+            </li>
+          </ul>
+        </div> -->
+      <!-- </div> -->
+      <!-- <div class="footer-list-1">
+        <h4 class="footer-header quick-links">quick link</h4>
+        <ul class="list-1">
+          <li><a href="#">Editor@whatuni.com</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About Whatuni</a></li>
+          <li><a href="#">Student Choice Awards</a></li>
+          <li><a href="#">The Whatuni Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Cookies Notice</a></li>
+        </ul>
+      </div>
+      <div class="footer-list-1">
+        <h4 class="footer-header browse">Browse</h4>
+        <ul class="list-1">
+          <li><a href="#">Editor@whatuni.com</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About Whatuni</a></li>
+          <li><a href="#">Student Choice Awards</a></li>
+          <li><a href="#">The Whatuni Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Cookies Notice</a></li>
+        </ul>
+      </div>
+      <div class="footer-list-1">
+        <h4 class="footer-header subjects">Subjects</h4>
+        <ul class="list-1">
+          <li><a href="#">Editor@whatuni.com</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About Whatuni</a></li>
+          <li><a href="#">Student Choice Awards</a></li>
+          <li><a href="#">The Whatuni Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Cookies Notice</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+</div>

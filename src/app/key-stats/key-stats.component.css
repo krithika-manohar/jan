@@ -1,0 +1,194 @@
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.key-stats {
+  margin-top: 40px;
+  background: var(--Generic-White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  padding: 31px 24px 24px 24px;
+}
+.key-stats-header {
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.56px;
+  margin-right: 7px;
+}
+.key-header {
+  margin-bottom: 32px;
+}
+.graphs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 110px;
+}
+.graph-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.graph__1 {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.animation {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+.ranking,
+.ranks {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.ranks {
+  font-weight: 400;
+}
+.drop-out {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.animation-header {
+  display: flex;
+  gap: 168px;
+  /* justify-content: flex-start; */
+  /* margin-bottom: 8px; */
+}
+.animation-grid-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.drop-header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.average-salary {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.animation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.slider {
+  position: relative;
+}
+.grey-line-svg {
+  position: relative;
+}
+.green-line-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.politics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.pol-grid {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.average {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+.average-content {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.euro {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  margin-top: 2px;
+}
+
+.std {
+  color: #000;
+  font-family: Lato-Bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+.course-top {
+  display: flex;
+  justify-content: space-between;
+}
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
+}
+.res-flex {
+  display: flex;
+}
+@media only screen and (max-width: 366px) {
+  .politics-grid {
+    display: block;
+    gap: 8px;
+  }
+  .graphs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .course-header {
+    display: block;
+  }
+  .data {
+    display: none;
+  }
+  .animation-grid {
+    display: block;
+  }
+}
+@media only screen and (min-width: 367px) and (max-width: 590px) {
+  .politics-grid {
+    display: block;
+    gap: 8px;
+  }
+  .graphs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .course-header {
+    display: block;
+  }
+  .data {
+    display: none;
+  }
+  .animation-grid {
+    display: block;
+  }
+}
+@media only screen and (min-width: 591px) and (max-width: 750px) {
+  .graphs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .animation-grid {
+    display: block;
+  }
+}

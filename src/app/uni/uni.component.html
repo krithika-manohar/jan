@@ -1,0 +1,91 @@
+<!--
+<p>
+  uni works name:{{ name1 }}!
+  below not works; infiniteloop ahhpens since app test is uni's html which is thois file -->
+<!-- <app-test></app-test>  
+</p>-->
+<section class="courses-section">
+  <div class="container">
+    <div class="course-top">
+      <div class="course-header">
+        <p class="course-opt">Different course options</p>
+        <div class="drop">
+          <p class="two cursor">2 options available</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            class="cursor"
+          >
+            <path
+              d="M15 8.5L10 13.5L5 8.5"
+              stroke="#3460DC"
+              stroke-width="1.67"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="data-content">
+        <p class="data">
+          DATA SOURCE: <span class="data-span">UNISTATS / UCAS / HESA</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="data-grid">
+      <div class="grids" *ngFor="let item of gridData">
+        <img src="{{ item.img }}" alt="{{ item.header }}" />
+        <div class="grid-res">
+          <p class="icon-top">{{ item.header }}</p>
+          <p class="icon-para">{{ item.para }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="data-grid">
+      <div class="grids">
+        <img src="../assets/img/Icon-1.png" alt="icon-1" />
+        <div class="grid-res">
+          <p class="icon-top">Qualification</p>
+          <p class="icon-para">Bachelor of Arts (with Honours) - BA (Hons)</p>
+        </div>
+      </div>
+
+      <div class="grids">
+        <img src="../assets/img/Icon-2.png" alt="icon-1" />
+        <div class="grid-res">
+          <p class="icon-top">Location</p>
+          <p class="icon-para">Norwich University of the Arts</p>
+        </div>
+      </div>
+
+      <div class="grids">
+        <img src="../assets/img/Icon-3.png" alt="icon-1" />
+        <div class="grid-res">
+          <p class="icon-top">Study mode</p>
+          <p class="icon-para">Full time</p>
+        </div>
+      </div>
+
+      <div class="grids">
+        <img src="../assets/img/Icon-4.png" alt="icon-1" />
+        <div class="grid-res">
+          <p class="icon-top">Start date</p>
+          <p class="icon-para">SEP-24</p>
+        </div>
+      </div>
+
+      <div class="grids">
+        <img src="../assets/img/Icon-5.png" alt="icon-1" />
+        <div class="grid-res">
+          <p class="icon-top">Duration</p>
+          <p class="icon-para">3 years</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
