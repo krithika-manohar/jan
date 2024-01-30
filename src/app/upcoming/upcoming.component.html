@@ -1,0 +1,40 @@
+<section class="upcoming">
+  <div class="container">
+    <div class="main_1">
+      <a [routerLink]="'/Home'">Go to homepage</a>
+      <!-- if we give / -- gets attached with root url 
+      directly without being attached with current active url ; when navigating through multiple pages -->
+      <!-- ./Home - relative path; wont work coz appends to active url -->
+      <!-- ../Home - moves on level up and then appends; works -->
+      <!-- ../../ - two level up -->
+
+      <!-- two methods to route -
+      1) navigate
+    2)navigateToUrl -->
+      <button (click)="navigateToHome()">Go to Homepagee</button>
+
+      <div class="main-box">
+        <div class="box-para">
+          <p class="box-para-1 cursor">
+            Check upcoming open days and book your place
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M11.5556 4.55566L17 10.0001M17 10.0001L11.5556 15.4446M17 10.0001L3 10.0001"
+              stroke="#047857"
+              stroke-width="1.67"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

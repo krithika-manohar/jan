@@ -1,0 +1,30 @@
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.main_1 {
+  padding: 32px 0 24px 0;
+}
+
+.upcoming {
+  background: var(--Neutral-100, #f1f5f9);
+}
+.main-box {
+  padding: 16px;
+  border: 2px solid var(--Success-500, #10b981);
+  background: var(--Success-100, #d1fae5);
+}
+.box-para {
+  display: flex;
+  gap: 8px;
+}
+.box-para-1 {
+  color: var(--success-700-main, #047857);
+  text-decoration: underline;
+  font: 400 14px/20px;
+  text-align: center;
+  cursor: pointer;
+}
+.box-para svg {
+  cursor: pointer;
+}

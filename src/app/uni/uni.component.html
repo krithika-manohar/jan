@@ -35,17 +35,29 @@
         </p>
       </div>
     </div>
-
-    <div class="data-grid">
-      <div class="grids" *ngFor="let item of gridData">
-        <img src="{{ item.img }}" alt="{{ item.header }}" />
-        <div class="grid-res">
-          <p class="icon-top">{{ item.header }}</p>
-          <p class="icon-para">{{ item.para }}</p>
+    <div *ngIf="isUsed; else different">
+      <div class="data-grid">
+        <div class="grids" *ngFor="let item of gridData">
+          <img src="{{ item.img }}" alt="{{ item.header }}" />
+          <div class="grid-res">
+            <p class="icon-top">{{ item.header }}</p>
+            <p class="icon-para">{{ item.para }}</p>
+          </div>
         </div>
       </div>
     </div>
 
+    <ng-template #different>
+      <div class="data-grid">
+        <div class="data-flex" *ngFor="let item of gridData">
+          <img src="{{ item.img }}" alt="{{ item.header }}" />
+          <div class="grid-res">
+            <p class="icon-top-flex">{{ item.header }}</p>
+            <p class="icon-para">{{ item.para }}</p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
     <!-- <div class="data-grid">
       <div class="grids">
         <img src="../assets/img/Icon-1.png" alt="icon-1" />

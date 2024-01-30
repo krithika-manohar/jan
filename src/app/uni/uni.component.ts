@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-uni',
@@ -36,4 +36,6 @@ export class UniComponent {
   ];
   // constructor() {}
   name1 = '1';
+  @Input()
+  isUsed: boolean = true;
 }

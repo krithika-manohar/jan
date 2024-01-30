@@ -50,12 +50,22 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 32px;
 }
+.data-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
 .icon-top {
   margin: 16px 0 8px 0;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+.icon-top-flex {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .icon-para {

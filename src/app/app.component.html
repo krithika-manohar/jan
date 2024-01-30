@@ -5,7 +5,61 @@
 <!-- above one comes from app.module -->
 <!--in that we imported parentmodule1 ; in parentmodule1 we imported and exported
 parentmodule2 -->
+
 <app-header></app-header>
+<section class="header-nav">
+  <nav class="navigation main-nav">
+    <ul class="menu main-nav-list">
+      <li>
+        <a
+          routerLink=""
+          class="nav-link main-nav-link"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+
+      <li>
+        <a
+          [routerLink]="'/Upcoming'"
+          class="nav-link main-nav-link"
+          [routerLinkActive]="'active'"
+          >Upcoming</a
+        >
+      </li>
+      <!-- if we give / -- gets attached with root url 
+      directly without being attached with current active url ; when navigating through multiple pages -->
+      <li>
+        <a
+          [routerLinkActive]="'active'"
+          [routerLink]="['Different course']"
+          class="nav-link main-nav-link"
+          >Different course</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLinkActive]="'active'"
+          routerLink="Key stats"
+          class="nav-link main-nav-link"
+          >Key stats</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLinkActive]="'active'"
+          routerLink="Footer"
+          class="nav-link main-nav-link"
+          >Footer</a
+        >
+      </li>
+    </ul>
+  </nav>
+</section>
+<!-- 
+<app-upcoming></app-upcoming>
 <app-uni></app-uni>
 <app-key-stats></app-key-stats>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+<router-outlet></router-outlet>
